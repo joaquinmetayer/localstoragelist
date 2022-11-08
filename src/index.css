@@ -1,37 +1,56 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    user-select: none;
-    text-transform: lowercase;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-transform: lowercase;
 }
-body{
-    padding: 20px;
-    max-width: 300px;
-    margin: 0 auto;
+body {
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
 }
-a{
-    cursor: pointer;
+a {
+  cursor: pointer;
+  color: #3076ad;
 }
-p, form{
-    padding: 10px 0 10px 0;
-}
-form{
-    display: flex;
-}
-input{
-    border: 0;
-    font-size: 16px;
+img{
     width: 100%;
+    padding-top: 10px;
 }
-input:focus, button:focus {
-    outline: none !important;
+h1{
+    text-align: center;
 }
-.button-delete{
-    border: 0;
-    background-color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    color: #3076ad;
-    cursor: pointer;
+p,
+h1,
+form {
+  padding: 10px 0 10px 0;
+}
+input {
+  border: 0;
+  font-size: 16px;
+  width: 100%;
+}
+input:focus,
+button:focus {
+  outline: none !important;
+}
+.button-delete {
+  border: 0;
+  background-color: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #3076ad;
+  cursor: pointer;
+}
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #fff;
+    background: #191919;
+  }
+  .button-delete {
+    color: #60baff;
+  }
+  a{
+    color: #60baff;
+  }
 }

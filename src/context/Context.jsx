@@ -24,9 +24,10 @@ export function ContextProvider(props) {
 
   useEffect((e) => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
+
   }, []);
 
-  document.title = "list local storage";
+  document.title = "local storage list";
 
   return (
     <Context.Provider
